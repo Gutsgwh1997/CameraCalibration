@@ -15,3 +15,6 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(CameraCalibration calibration_mono.cpp)
 target_link_libraries(CameraCalibration ${OpenCV_LIBS} ${Boost_LIBRARIES})
+
+add_executable(motionRecovery motionRecovery.cpp)
+target_link_libraries(motionRecovery ${OpenCV_LIBS} ${Boost_LIBRARIES})
